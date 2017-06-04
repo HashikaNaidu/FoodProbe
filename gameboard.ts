@@ -31,5 +31,5 @@ let game = {
       ...board.slice(row+1)
     ];
   },
-
+//display board
   
