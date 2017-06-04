@@ -17,7 +17,7 @@ import game from './game';
     </div>
     
 
-    <button class="restart" (click)="restart()">Restart</button>`
+    <button class="restart" (click)="restart()">Play Again</button>`
 })
 
 export class AppComponent {
