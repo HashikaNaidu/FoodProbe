@@ -11,6 +11,10 @@ function boardLoop(board, fn) {
 
 let game = {
   
+ /**
+* Create a new board (2D array)
+*/
+  
   createBoard() {
     let board = [];
     for (let row = 0; row < DIMENSION; row++) {
