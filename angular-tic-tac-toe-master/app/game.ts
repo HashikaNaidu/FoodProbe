@@ -38,6 +38,27 @@ let game = {
       ...board.slice(row+1)
     ];
   },
+  
+   /**
+* Check a slice of the board for winner
+*/
+check(arr) {
+let clone = arr.slice(0);
+let sum = 0;
+while(clone.length) {
+let val = clone.pop();
+if (val == null) {
+return;
+}
+sum += val;
+}
+if (sum === 0 || sum === DIMENSION) {
+return {
+winner: sum / DIMENSION || 0
+};
+}
+return;
+},
 
   
 
