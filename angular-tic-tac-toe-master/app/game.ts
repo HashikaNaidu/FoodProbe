@@ -24,10 +24,12 @@ let game = {
   },
 
   
+/**
+* Method for returning a new board with the
+* given cell updated
+*/
+  
   set(board, val, row, col) {
-    
-
-
     return [
       ...board.slice(0, row),
       [
