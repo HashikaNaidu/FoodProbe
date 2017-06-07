@@ -32,4 +32,20 @@ let game = {
     ];
   },
 //display board
-  
+   display(board) {
+    let display = '';
+    let prevRow;
+    boardLoop(board, (val, coord) => {
+      if (coord.row !== prevRow) {
+        display += '\n';
+        prevRow = coord.row;
+      }
+      
+    });
+    display += '\n';
+    console.log(display);
+  }
+};
+
+export default game;
+
